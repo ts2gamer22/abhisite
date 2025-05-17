@@ -9,22 +9,22 @@ const services = [
   {
     title: "Custom Beat Production",
     description: "Tailored beats that match your vision and style",
-    image: "/custom beat.png"
+    image: `${import.meta.env.BASE_URL}custom beat.png`
   },
   {
     title: "Mixing & Mastering",
     description: "Professional audio engineering to perfect your sound",
-    image: "/media and mzing.png"
+    image: `${import.meta.env.BASE_URL}media and mzing.png`
   },
   {
     title: "Sound Design",
     description: "Unique sonic elements to enhance your projects",
-    image: "/sound design.png"
+    image: `${import.meta.env.BASE_URL}sound design.png`
   },
   {
     title: "Film & Media Scoring",
     description: "Emotional soundtracks for visual media",
-    image: "/movie.png"
+    image: `${import.meta.env.BASE_URL}movie.png`
   },
 ];
 
