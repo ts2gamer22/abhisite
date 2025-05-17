@@ -39,7 +39,7 @@ const ContactSection = () => {
               </div>
               <div className="flex items-center gap-4">
                 <a href="https://open.spotify.com/artist/5dgtHxWOCczwceqvBio34M" target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-white flex items-center gap-4">
-                  <img src="/icons8-spotify.svg" className="h-5 w-5" alt="Spotify" />
+                  <img src="/abhisite/spotifyicon.svg" className="h-5 w-5" alt="Spotify" />
                   <span>Abhishek Solomon</span>
                 </a>
               </div>

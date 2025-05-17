@@ -20,6 +20,13 @@ const Header = () => {
     };
   }, []);
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <motion.header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -36,29 +43,44 @@ const Header = () => {
           <nav className="w-full max-w-md">
             <ul className="flex justify-between items-center gap-3 md:gap-8 px-2">
               <li>
-                <a href="#" className="text-white hover:text-[#8F62C2] transition-colors text-[13px] md:text-sm font-medium tracking-wide">
+                <button 
+                  onClick={() => scrollToSection('hero')} 
+                  className="text-white hover:text-[#8F62C2] transition-colors text-[13px] md:text-sm font-medium tracking-wide"
+                >
                   HOME
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#about" className="text-white hover:text-[#8F62C2] transition-colors text-[13px] md:text-sm font-medium tracking-wide">
+                <button 
+                  onClick={() => scrollToSection('about')} 
+                  className="text-white hover:text-[#8F62C2] transition-colors text-[13px] md:text-sm font-medium tracking-wide"
+                >
                   ABOUT
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#spotify" className="text-white hover:text-[#8F62C2] transition-colors text-[13px] md:text-sm font-medium tracking-wide">
+                <button 
+                  onClick={() => scrollToSection('spotify')} 
+                  className="text-white hover:text-[#8F62C2] transition-colors text-[13px] md:text-sm font-medium tracking-wide"
+                >
                   MUSIC
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#services" className="text-white hover:text-[#8F62C2] transition-colors text-[13px] md:text-sm font-medium tracking-wide">
+                <button 
+                  onClick={() => scrollToSection('services')} 
+                  className="text-white hover:text-[#8F62C2] transition-colors text-[13px] md:text-sm font-medium tracking-wide"
+                >
                   SERVICES
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#contact" className="text-white hover:text-[#8F62C2] transition-colors text-[13px] md:text-sm font-medium tracking-wide">
+                <button 
+                  onClick={() => scrollToSection('contact')} 
+                  className="text-white hover:text-[#8F62C2] transition-colors text-[13px] md:text-sm font-medium tracking-wide"
+                >
                   CONTACT
-                </a>
+                </button>
               </li>
             </ul>
           </nav>

@@ -3,8 +3,30 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
+  // Add scroll functions
+  const scrollToSpotify = () => {
+    const spotifySection = document.getElementById('spotify');
+    if (spotifySection) {
+      spotifySection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="min-h-[85vh] flex flex-col justify-center relative overflow-hidden pt-16">
+    <section id="hero" className="min-h-[85vh] flex flex-col justify-center relative overflow-hidden pt-16">
       {/* Background Image - reduced opacity for better visibility */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -33,10 +55,10 @@ const HeroSection = () => {
           
           <div className="flex flex-row justify-center items-center gap-2 md:gap-4">
             <Button asChild className="bg-[#8F62C2] hover:bg-[#7F52B2] text-white px-3 md:px-8 py-3 md:py-6 rounded-full text-sm md:text-base whitespace-nowrap">
-              <a href="#spotify">Listen Now</a>
+              <a onClick={scrollToSpotify} style={{ cursor: 'pointer' }}>Listen Now</a>
             </Button>
             <Button asChild variant="outline" className="border-white/20 hover:bg-[#5A2E8B]/80 hover:border-white/20 text-white px-3 md:px-8 py-3 md:py-6 rounded-full text-sm md:text-base">
-              <a href="#contact">Collaborate</a>
+              <a onClick={scrollToContact} style={{ cursor: 'pointer' }}>Collaborate</a>
             </Button>
           </div>
         </motion.div>
@@ -44,7 +66,8 @@ const HeroSection = () => {
       
       <div className="absolute bottom-10 left-0 right-0 flex justify-center">
         <a 
-          href="#about" 
+          onClick={scrollToAbout}
+          style={{ cursor: 'pointer' }}
           className="text-muted-foreground hover:text-white transition-colors"
           aria-label="Scroll down"
         >

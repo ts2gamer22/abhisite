@@ -14,11 +14,10 @@ const Footer = () => {
           <div className="flex gap-4 mb-8">
             <Button variant="ghost" size="icon" asChild>
               <a 
-                href="https://open.spotify.com/artist/" 
+                href="https://open.spotify.com/artist/5dgtHxWOCczwceqvBio34M" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="Spotify"
-                className="hover:bg-[#7A51AD]/20"
               >
                 <img src="/abhisite/spotifyicon.svg" className="h-5 w-5" alt="Spotify" />
               </a>
@@ -27,18 +26,16 @@ const Footer = () => {
               <a 
                 href="mailto:contact@abhisheksolomon.com" 
                 aria-label="Email"
-                className="hover:bg-[#7A51AD]/20"
               >
                 <Mail className="h-5 w-5 text-[#8F62C2]" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a 
-                href="https://instagram.com/" 
+                href="https://www.instagram.com/abhishekbharathsolomon/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="hover:bg-[#7A51AD]/20"
               >
                 <Instagram className="h-5 w-5 text-[#8F62C2]" />
               </a>
