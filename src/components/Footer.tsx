@@ -20,7 +20,7 @@ const Footer = () => {
                 aria-label="Spotify"
                 className="hover:bg-[#7A51AD]/20"
               >
-                <img src="/icon-spotify.svg" className="h-5 w-5" alt="Spotify" />
+                <img src="/icons8-spotify.svg" className="h-5 w-5" alt="Spotify" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
