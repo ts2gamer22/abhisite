@@ -33,8 +33,8 @@ const AboutSection = () => {
             >
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-[#8F62C2]/30 hover:border-[#8F62C2]/70 transition-colors">
                 <img 
-                  src={`${import.meta.env.BASE_URL}about me face.jpg`}
-                  alt="Abhishek Solomon"
+                  src="/about-me-face.jpg" 
+                  alt="Abhishek Solomon" 
                   className="w-full h-full object-cover"
                 />
               </div>
