@@ -10,7 +10,7 @@ const VinylPlayer = () => {
   useEffect(() => {
     // Create Howl instance
     soundRef.current = new Howl({
-      src: ["/sample.mp3"], // Updated to use the new sample.mp3 file
+      src: ["/abhisite/sample.mp3"], // Updated to use the new sample.mp3 file
       loop: true,
       volume: 0.6,
       preload: true,

@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* Background Image - reduced opacity for better visibility */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/hero-section.jpg"
+          src="/abhisite/herosection.jpg"
           alt="Music Studio"
           className="w-full h-full object-cover opacity-60"
         />

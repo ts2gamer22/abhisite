@@ -9,7 +9,6 @@ import ServicesSection from '@/components/ServicesSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import VinylPlayer from '@/components/VinylPlayer';
-import GenresSection from '@/components/GenresSection';
 
 const Index = () => {
   useEffect(() => {
